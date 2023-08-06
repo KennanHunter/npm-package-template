@@ -1,0 +1,53 @@
+{
+  "name": "@kennanhunter/npm-package-template",
+  "version": "0.0.0-alpha.1",
+  "description": "Kennan Hunter's simple package template",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KennanHunter/npm-package-template#readme"
+  },
+  "bugs": {
+    "url": "https://github.com/kennanhunter/npm-package-template/issues"
+  },
+  "homepage": "https://github.com/KennanHunter/npm-package-template/",
+  "author": {
+    "name": "Kennan Hunter",
+    "email": "kennanhunter5@gmail.com",
+    "url": "https://kennan.tech"
+  },
+  "keywords": [],
+  "main": "dist/index.js",
+  "exports": {
+    ".": "./dist/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "benchmark": "yarn build && node ./dist/benchmark/index.js",
+    "build": "yarn clean && tsc",
+    "clean": "rimraf ./dist",
+    "execute:bin": "ts-node ./src/bin.ts",
+    "format": "format-package -w && prettier -w .",
+    "prepare": "husky install",
+    "test": "jest"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://ko-fi.com/kennan"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^29.4.1",
+    "format-package": "^7.0.0",
+    "husky": "^8.0.3",
+    "jest": "^29.5.0",
+    "prettier": "^2.8.7",
+    "rimraf": "^5.0.0",
+    "ts-jest": "^29.0.5",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  }
+}
