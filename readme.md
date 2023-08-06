@@ -35,7 +35,7 @@ yarn add @kennanhunter/npm-package-template
 ### Adding
 
 ```typescript
-import { add } from "zod";
+import { add } from "@kennanhunter/npm-package-template";
 
 const res = add(5, 7);
 
