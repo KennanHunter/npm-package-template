@@ -1,7 +1,7 @@
 > For almost everything, just replace
-> `kennanhunter` with your username
-> `@kennanhunter/npm-package-template` with your npm name (line 20 + 21 of readme.md)
-> `npm-package-template` with your repo name
+> `kennanhunter` with your username,
+> `@kennanhunter/npm-package-template` with your npm name (line 20 + 21 of readme.md),
+> and `npm-package-template` with your repo name
 >
 > For github actions add
 >
@@ -27,9 +27,9 @@
 
 ```shell
 # npm
-npm install npm-package-template
+npm install @kennanhunter/npm-package-template
 # Yarn
-yarn add npm-package-template
+yarn add @kennanhunter/npm-package-template
 ```
 
 ### Adding
